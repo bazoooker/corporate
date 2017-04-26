@@ -5,59 +5,28 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 
-
-// Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
-
-    browserSync.init({
-        server: "corporate"
-    });
-
-    gulp.watch("source/sass/**/*.scss", ['sass']);
-    gulp.watch("public/**/*.html").on('change', browserSync.reload);
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: './public'
+    }
+  });
 });
 
-// Compile sass into CSS & auto-inject into browsers
+
 gulp.task('sass', function() {
-    return gulp.src("source/sass/**/*.scss")
-        .pipe(sass())
-        .pipe(gulp.dest("public/styles"))
-        .pipe(browserSync.stream());
+	return gulp.src('source/sass/**/*.scss') // Gets all files ending with .scss in app/scss
+    .pipe(sass())
+    .pipe(gulp.dest('public/styles'))
+    .pipe(browserSync.stream({
+      stream: true
+    }))
 });
 
-gulp.task('default', ['serve']);
 
+gulp.task('watch', ['browserSync', 'sass'], function(){
+  gulp.watch('public/*.html', browserSync.reload);
+  gulp.watch('source/sass/**/*.scss', ['sass']);   
+}); 
 
-
-
-
-
-
-
-
-
-// gulp.task('browserSync', function() {
-//   browserSync.init({
-//     server: {
-//       baseDir: 'corporate'
-//     }
-//   });
-// });
-
-
-// gulp.task('sass', function() {
-// 	return gulp.src('source/sass/**/*.scss') // Gets all files ending with .scss in app/scss
-//     .pipe(sass())
-//     .pipe(gulp.dest('public/styles'))
-//     .pipe(browserSync.stream({
-//       stream: true
-//     }))
-// });
-
-
-// gulp.task('watch', ['browserSync', 'sass'], function(){
-//   gulp.watch('public/*.html', browserSync.reload);
-//   gulp.watch('source/sass/**/*.scss', ['sass']);   
-// }); 
-
-// gulp.task('default', ['watch']);
+gulp.task('default', ['watch']);
