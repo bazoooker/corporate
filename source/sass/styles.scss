@@ -1,8 +1,11 @@
-// styles.scss
-.testing {
-  width: percentage(5/7);
-}
+$main-color: #ff6d6d;
+$sub-main-color: #fb8686;
+$contrast-color: #323969;
 
 p {
-	color: red;
+	color: $main-color;
+}
+
+h1 {
+	color: $main-color;
 }
