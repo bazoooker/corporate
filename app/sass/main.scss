@@ -1,2 +1,17 @@
-// @import "../../node_modules/bootstrap-sass/assets/*";
+// подключаем бутстрап
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+// подключаем сброс стилей для всех браузеров
+@import "base/_normalize.scss";
+
+// подключаем шрифты
+@import url('https://fonts.googleapis.com/css?family=Exo:100,400,400i,500');
+
+@import "block/_action-btn.scss";
+
+
+
+
+* {
+	font-family: 'Exo', sans-serif;
+}
