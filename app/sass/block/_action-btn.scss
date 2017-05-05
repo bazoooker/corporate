@@ -1,3 +1,42 @@
 .action-btn {
-	color: red;
+	background-color: $main-color;
+	outline: none;
+	border: none;
+	height: 50px;
+	line-height: 50px;
+	width: 190px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 300;
+}
+
+.action-btn:hover {
+	background-color: adjust-hue($main-color, 5deg);
+}
+
+.action-btn-main {
+	letter-spacing: 2px;
+}
+
+.action-btn-subscribe {
+	box-shadow: 0px 1px 5px black;
+	position: relative;
+	width: 262px;
+}
+
+.action-btn-subscribe::after {
+	content: "30 days free trial for all.";
+	font-size: 16px;
+	text-transform: none;
+	display: table;
+	position: absolute;
+	top: -70px;
+	width: 262px;
+	height: 57px;
+	background: url(../img/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+	cursor: default;
 }
