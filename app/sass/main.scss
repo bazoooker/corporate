@@ -23,3 +23,32 @@ $main-color: #ff6d6d;
 	font-family: 'Exo', sans-serif;
 }
 
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow {
+    width: 16px;
+    height: 37px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon_dribbble_s {
+    width: 20px;
+    height: 21px;
+    background-position: -31px -5px;
+}
+
+.sprite-icon_facebook_s {
+    width: 11px;
+    height: 21px;
+    background-position: -61px -5px;
+}
+
+.sprite-icon_googleplus_s {
+    width: 20px;
+    height: 17px;
+    background-position: -31px -36px;
+}
