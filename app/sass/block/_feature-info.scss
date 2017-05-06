@@ -1,0 +1,25 @@
+.feature-info {
+
+}
+
+.feature-info__subheading {
+	color: $main-color;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 500;
+}
+
+.feature-info__heading {
+	color: $heading-color;
+	letter-spacing: 2px;
+	margin-bottom: 40px;
+}
+
+.feature-info__description {
+	color: $text-color;
+	letter-spacing: .04em;
+}
+
+.dots {
+	color: $main-color;
+}

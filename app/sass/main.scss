@@ -1,5 +1,6 @@
 $main-color: #ff6d6d;
-
+$text-color: #717171;
+$heading-color: #282828;
 
 // подключаем бутстрап
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -10,11 +11,25 @@ $main-color: #ff6d6d;
 // подключаем шрифты
 @import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,400i,500');
 
+
+// малые блоки и кнопки
+
 @import "block/_action-btn";
+
+@import "block/_play-btn";
+
+@import "block/_single-feature";
+
+
+// секции в порядке следования сверху вниз
 
 @import "block/_header";
 
-@import "block/_play-btn";
+@import "block/_new-design";
+
+@import "block/_feature-info";
+
+@import "block/_new-features";
 
 
 
@@ -22,6 +37,25 @@ $main-color: #ff6d6d;
 * {
 	font-family: 'Exo', sans-serif;
 }
+
+p {
+    letter-spacing: .04em;
+}
+
+// .colored {
+//     background-color: #ececec;
+//     width: 80%;
+//     height: 100%;
+// }
+
+
+
+
+
+
+
+
+
 
 .sprite {
     background-image: url(spritesheet.png);
