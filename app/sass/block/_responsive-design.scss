@@ -1,0 +1,34 @@
+.responsive-design {
+	position: relative;
+    overflow: hidden;
+    
+}
+
+.feature-info-responsive {
+	padding: 139px 0 150px 0;  
+}
+
+.responsive-design::after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+    background: url(../../img/macbook.png); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 83%;   
+    height: 100%;
+    width: 50%; 
+}
+
+.responsive-design::before {
+	display: block;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;    
+    background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 50%, rgba(251, 134, 134, 100) 50%);    
+    height: 120%;
+    width: 40%;  
+}
