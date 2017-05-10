@@ -22,6 +22,10 @@ $heading-color: #282828;
 
 @import "block/_reviews-item";
 
+@import "block/_contact-form";
+
+@import "block/_footer-links";
+
 
 // секции в порядке следования сверху вниз
 
@@ -40,6 +44,12 @@ $heading-color: #282828;
 @import "block/_partners";
 
 @import "block/_browser-features";
+
+@import "block/_contact-us";
+
+@import "block/_footer";
+
+
 
 
 

@@ -20,6 +20,11 @@ $legacy_browser_support: false !default;
  *  `em` units.
  */
 
+ * {
+  margin: 0;
+  padding: 0;
+ }
+
 html {
   font-family: 'Exo', sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -574,5 +579,9 @@ table {
 
 td,
 th {
+  padding: 0;
+}
+
+li {
   padding: 0;
 }
