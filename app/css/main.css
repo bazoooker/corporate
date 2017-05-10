@@ -6249,6 +6249,18 @@ th {
 .feature-single__heading {
   color: #282828; }
 
+.reviews-item {
+  text-align: center; }
+
+.reviews-item__name {
+  color: #fff; }
+
+.reviews-item__position {
+  color: #ff6d6d; }
+
+.reviews-item__info {
+  color: #b6b6b8; }
+
 .header {
   display: flex;
   flex-direction: column;
@@ -6352,6 +6364,40 @@ th {
   background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 50%, #fb8686 50%);
   height: 120%;
   width: 40%; }
+
+.reviews {
+  background: url(../../img/clients-bg.jpg);
+  padding: 110px 0 80px 0; }
+
+.reviews-item__name {
+  margin-top: 35px; }
+
+.reviews-item__position {
+  color: #ff6d6d;
+  margin-bottom: 20px; }
+
+.reviews-item__info {
+  color: #b6b6b8; }
+
+.partners__logo {
+  margin-bottom: 20px; }
+
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  padding: 0 70px 0 70px; }
+
+.browser-features {
+  text-align: center;
+  padding: 105px 0 463px 0;
+  background-color: #f6f5f3;
+  background: url(../../img/browser.png);
+  background-position: bottom center;
+  background-repeat: no-repeat; }
+  .browser-features .feature-info {
+    padding: 0 200px; }
 
 * {
   font-family: 'Exo', sans-serif; }

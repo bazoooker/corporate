@@ -20,6 +20,8 @@ $heading-color: #282828;
 
 @import "block/_single-feature";
 
+@import "block/_reviews-item";
+
 
 // секции в порядке следования сверху вниз
 
@@ -32,6 +34,12 @@ $heading-color: #282828;
 @import "block/_new-features";
 
 @import "block/_responsive-design";
+
+@import "block/_reviews";
+
+@import "block/_partners";
+
+@import "block/_browser-features";
 
 
 
