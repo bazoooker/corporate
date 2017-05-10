@@ -1,9 +1,30 @@
 .footer {
+	position: relative;
 	padding: 100px 0 95px 0;
 	h6 {
 		color: #282828;
 		font-size: 24px;
 	}
+}
+
+.footer::before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;    
+    background: linear-gradient(to right top, rgba(255, 255, 255, 0) 50%, rgba(251, 134, 134, 100) 50%);    
+    height: 85%;
+    width: 23%;
+    z-index: 3;    
+}
+
+.footer__logo {
+	margin-bottom: 5px;
+}
+
+.social {
+	margin-top: 15px;
 }
 
  .social__icon {
@@ -12,6 +33,12 @@
  	display: inline-block;
  	background-repeat: no-repeat;
  	margin-right: 15px;
+ 	opacity: .6;
+ 	margin-right: 22px;
+ }
+
+ .social__icon:hover {
+ 	opacity: 1;
  }
 
  .social__icon_dribble {
@@ -36,15 +63,13 @@
  	background-position: center center;
  }
 
- .get-letter {
- 	form {
-		display: flex;
-		// align-items: center;
-		justify-content: space-between;
-	}
-	
-	input {
-		width: 266px;
+
+ .form-wrapper {
+ 	position: relative;
+ 	width: 266px;
+ 	height: 52px;
+ 	input {
+		// width: 266px;
 		height: 48px;
 		border: 1px solid grey;
 		border-radius: 5px;
@@ -52,9 +77,11 @@
 	}
 
 	input[placeholder] {
+		width: 224px;
 		text-transform: uppercase;
 		padding-left: 29px;
 		color: $text-color;
+		position: absolute;
 	}
 	*::-webkit-input-placeholder {
     	color: $text-color;
@@ -71,4 +98,28 @@
 	    /* IE 10+ */
 	    color: $text-color;
 	}
+
+	button[type="submit"] {
+		position: absolute;
+	    width: 51px;
+	    height: 48px;
+	    border-radius: 4px;
+	    background: #ff6d6d;
+	    right: 0;
+	    border: none;
+	    box-shadow: 0px 2px 5px 0px #c9c9c9;
+	}
+	button[type="submit"]::after {
+		display: block;
+		position: absolute;
+		content: "";
+		width: 51px;
+		height: 48px;
+		right: 0;
+		top: 0;
+		background: url(../../img/send.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
  }
+ 
