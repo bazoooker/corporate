@@ -40,3 +40,27 @@
 	background-position: 0% 100%;
 	cursor: default;
 }
+
+@media all and (max-width: 1199px) { 
+	.action-btn-subscribe {
+		box-shadow: 0px 1px 5px black;
+		position: relative;
+		width: 262px;
+		margin: 50px auto;
+	}
+
+	.action-btn-subscribe::after {
+		content: "30 days free trial for all.";
+		font-size: 16px;
+		text-transform: none;
+		display: table;
+		position: absolute;
+		top: -45px;
+		width: 262px;
+		height: 57px;
+		background: url(../img/arrow.png);
+		background-repeat: no-repeat;
+		background-position: 5% 100%;
+		cursor: default;
+	}
+}

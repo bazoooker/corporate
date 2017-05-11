@@ -13,3 +13,26 @@
     color: $text-color;
     text-decoration: underline;
 }
+
+@media all and (max-width: 1199px) { 
+	.new-features {
+		padding: 139px 0 170px 0;
+		background-image: url(../../img/new-features-bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+@media all and (max-width: 767px) { 
+	.new-features {
+		padding: 139px 0 170px 0;
+		background-image: url(../../img/new-features-bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 28% center;
+	}
+
+	.feature-single {
+		margin-top: 50px;
+	}
+}

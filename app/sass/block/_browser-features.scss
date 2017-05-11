@@ -9,3 +9,42 @@
 		padding: 0 200px;
 	}
 }
+
+@media all and (max-width: 1199px) { 
+	.browser-features {
+		padding: 105px 0 463px 0;
+		.feature-info {
+			padding: 0 100px;
+		}
+	}
+}
+
+@media all and (max-width: 991px) { 
+	.browser-features {
+		padding: 105px 0 393px 0;
+		background-size: 80%;
+		.feature-info {
+			padding: 0 20px;
+		}
+	}
+}
+
+@media all and (max-width: 880px) { 
+	.browser-features {
+		padding: 105px 0 313px 0;
+		background-size: 80%;
+		.feature-info {
+			padding: 0 20px;
+		}
+	}
+}
+
+@media all and (max-width: 600px) { 
+	.browser-features {
+		padding: 105px 0 263px 0;
+		background-size: 90%;
+		.feature-info {
+			padding: 0 0px;
+		}
+	}
+}

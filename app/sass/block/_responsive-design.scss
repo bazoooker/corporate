@@ -32,3 +32,21 @@
     height: 120%;
     width: 40%;  
 }
+
+@media all and (max-width: 991px) { 
+	.responsive-design::after {
+		left: -63px;
+	    background-size: 65%; 
+	}
+}
+
+@media all and (max-width: 767px) { 
+	.responsive-design::after {
+		display: none;
+	}
+
+	.responsive-design::before { 
+	    height: 20%;
+	    width: 60%;  
+	}
+}

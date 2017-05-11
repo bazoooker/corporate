@@ -13,3 +13,16 @@
 .reviews-item__info {
 	color: #b6b6b8;
 }
+
+@media all and (max-width: 767px) { 
+	.reviews-item__name {
+		font-size: 1.8em;
+	}
+
+	.reviews-item__position {
+		font-size: 1.1em;
+	}
+	.reviews-item {
+		margin-top: 55px;
+	}
+}

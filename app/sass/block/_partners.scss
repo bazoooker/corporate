@@ -6,3 +6,18 @@
 	padding: 0 70px 0 70px;
 }
 
+@media all and (max-width: 991px) { 
+	.partners {
+		padding: 0 0px 0 0px;
+	}
+
+	.partners__logo {
+		width: 80px;
+	}
+}
+
+@media all and (max-width: 570px) { 
+	.partners__logo {
+		width: 55px;
+	}
+}
