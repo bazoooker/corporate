@@ -6203,10 +6203,11 @@ li {
   text-transform: uppercase;
   border-radius: 4px;
   color: #fff;
-  font-weight: 300; }
+  font-weight: 300;
+  transition: 300ms; }
 
 .action-btn:hover {
-  background-color: #ff796d; }
+  background-color: #b66dff; }
 
 .action-btn-main {
   letter-spacing: 2px; }
@@ -6216,7 +6217,11 @@ li {
   position: relative;
   width: 262px; }
 
-.action-btn-subscribe::after {
+.action-btn-subscribe__wrapper {
+  position: relative;
+  width: 262px; }
+
+.action-btn-subscribe__wrapper::after {
   content: "30 days free trial for all.";
   font-size: 16px;
   text-transform: none;
@@ -6228,15 +6233,16 @@ li {
   background: url(../img/arrow.png);
   background-repeat: no-repeat;
   background-position: 0% 100%;
-  cursor: default; }
+  cursor: default;
+  color: #fff; }
 
 @media all and (max-width: 1199px) {
-  .action-btn-subscribe {
+  .action-btn-subscribe__wrapper {
     box-shadow: 0px 1px 5px black;
     position: relative;
     width: 262px;
     margin: 50px auto; }
-  .action-btn-subscribe::after {
+  .action-btn-subscribe__wrapper::after {
     content: "30 days free trial for all.";
     font-size: 16px;
     text-transform: none;
@@ -6257,7 +6263,9 @@ li {
   border-radius: 50%;
   border: none;
   position: relative;
-  margin: 10px 0 36px 0; }
+  margin: 10px 0 36px 0;
+  cursor: pointer;
+  transition: 300ms; }
 
 .play-btn::before {
   display: table;
@@ -6269,6 +6277,9 @@ li {
   background: url(../img/icon_play.png);
   background-repeat: no-repeat;
   background-position: 54% 50%; }
+
+.play-btn:hover {
+  transform: translateY(-3px); }
 
 .feature-single {
   text-align: center; }
@@ -6721,9 +6732,13 @@ li {
   height: 48px;
   border-radius: 4px;
   background: #ff6d6d;
-  right: 0;
+  right: 15px;
   border: none;
-  box-shadow: 0px 2px 5px 0px #c9c9c9; }
+  box-shadow: 0px 2px 5px 0px #c9c9c9;
+  transition: 300ms; }
+
+.form-wrapper button[type="submit"]:hover {
+  background-color: #b66dff; }
 
 .form-wrapper button[type="submit"]::after {
   display: block;

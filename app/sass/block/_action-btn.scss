@@ -10,10 +10,11 @@
 	border-radius: 4px;
 	color: #fff;
 	font-weight: 300;
+	transition: 300ms;
 }
 
 .action-btn:hover {
-	background-color: adjust-hue($main-color, 5deg);
+	background-color: adjust-hue($main-color, -90deg);
 }
 
 .action-btn-main {
@@ -26,7 +27,12 @@
 	width: 262px;
 }
 
-.action-btn-subscribe::after {
+.action-btn-subscribe__wrapper {
+	position: relative;
+	width: 262px;
+}
+
+.action-btn-subscribe__wrapper::after {
 	content: "30 days free trial for all.";
 	font-size: 16px;
 	text-transform: none;
@@ -39,17 +45,18 @@
 	background-repeat: no-repeat;
 	background-position: 0% 100%;
 	cursor: default;
+	color: #fff;
 }
 
 @media all and (max-width: 1199px) { 
-	.action-btn-subscribe {
+	.action-btn-subscribe__wrapper {
 		box-shadow: 0px 1px 5px black;
 		position: relative;
 		width: 262px;
 		margin: 50px auto;
 	}
 
-	.action-btn-subscribe::after {
+	.action-btn-subscribe__wrapper::after {
 		content: "30 days free trial for all.";
 		font-size: 16px;
 		text-transform: none;
