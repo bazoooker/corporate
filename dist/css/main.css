@@ -6471,7 +6471,7 @@ li {
 
 .new-features {
   padding: 139px 0 170px 0;
-  background-image: url(../../img/new-features-bg.jpg);
+  background-image: url(../img/new-features-bg.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto; }
 
@@ -6485,14 +6485,14 @@ li {
 @media all and (max-width: 1199px) {
   .new-features {
     padding: 139px 0 170px 0;
-    background-image: url(../../img/new-features-bg.jpg);
+    background-image: url(../img/new-features-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover; } }
 
 @media all and (max-width: 767px) {
   .new-features {
     padding: 139px 0 170px 0;
-    background-image: url(../../img/new-features-bg.jpg);
+    background-image: url(../img/new-features-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 28% center; }
@@ -6512,7 +6512,7 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../../img/macbook.png);
+  background: url(../img/macbook.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 83%;
@@ -6542,7 +6542,7 @@ li {
     width: 60%; } }
 
 .reviews {
-  background: url(../../img/clients-bg.jpg);
+  background: url(../img/clients-bg.jpg);
   padding: 110px 0 80px 0; }
 
 .reviews-item__name {
@@ -6674,23 +6674,23 @@ li {
   opacity: 1; }
 
 .social__icon_dribble {
-  background: url(../../img/icon_dribbble_s.png);
+  background: url(../img/icon_dribbble_s.png);
   background-repeat: no-repeat;
   background-position: center center;
   margin-left: 50px; }
 
 .social__icon_facebook {
-  background: url(../../img/icon_facebook_s.png);
+  background: url(../img/icon_facebook_s.png);
   background-repeat: no-repeat;
   background-position: center center; }
 
 .social__icon_google {
-  background: url(../../img/icon_googleplus_s.png);
+  background: url(../img/icon_googleplus_s.png);
   background-repeat: no-repeat;
   background-position: center center; }
 
 .social__icon_twitter {
-  background: url(../../img/icon_twitter_s.png);
+  background: url(../img/icon_twitter_s.png);
   background-repeat: no-repeat;
   background-position: center center; }
 
@@ -6748,7 +6748,7 @@ li {
   height: 48px;
   right: 0;
   top: 0;
-  background: url(../../img/send.png);
+  background: url(../img/send.png);
   background-repeat: no-repeat;
   background-position: center center; }
 
